@@ -3,13 +3,15 @@
 }
 
 html {
+  font-size: $base-font-size;
+  line-height: 1.75;
   background-color: $background-base-color;
+
+  @media (max-width: 840px) { font-size: $base-font-size * 0.875; }
 }
 
 body {
   font-family: $base-font;
-  font-size: $base-font-size;
-  line-height: 1.75;
   color: $text-base-color;
 }
 
@@ -38,6 +40,11 @@ h6 { font-size: 1.125rem; }
 .container {
   margin: 4rem auto;
   width: 50rem;
+
+  @media (max-width: 840px) {
+    padding: 0 1rem;
+    width: 100%;
+  }
 }
 
 //----------------------------------------------------------------------------------------
@@ -59,6 +66,12 @@ h6 { font-size: 1.125rem; }
   .title { font-size: 3rem; }
   .separator { font-size: 1.25rem; }
   .description { font-size: 2rem; }
+
+  @media (max-width: 840px) {
+    .title { font-size: 2rem; }
+    .separator { font-size: 1.25rem; }
+    .description { font-size: 1.5rem; }
+  }
 }
 
 //----------------------------------------------------------------------------------------
@@ -74,6 +87,10 @@ h6 { font-size: 1.125rem; }
     margin: 0 -1rem 2rem;
 
     background-color: $background-highlight-color;
+
+    @media (max-width: 840px) {
+      margin: 0 0 2rem;
+    }
 
     a {
       color: $text-base-color;
