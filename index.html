@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="blog-article">
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% else %}
+  {% for post in paginator.posts %}
+    <header class="article-header">
+      <div class="title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></div>
+      <div class="description">{{ post.description }}</div>
+      <div class="date"><time>Written at {{ post.date | date: "%Y-%m-%d" }}</time></div>
+    </header>
+  {% endfor %}
+{% endif %}
+</article>
+
+<div class="pagination">
+  {% if paginator.next_page %}
+    <a class="pagination-next" href="{{ paginator.next_page_path | prepend: site.baseurl }}">&lt; Older posts</a>
+  {% endif %}
+  {% if paginator.previous_page %}
+    <a class="pagination-prev" href="{{ paginator.previous_page_path | prepend: site.baseurl }}">Newer posts &gt;</a>
+  {% endif %}
+</div>

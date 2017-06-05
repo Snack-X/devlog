@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "D2Coding Light KR";
+  font-weight: 700;
+  src: local("D2Coding Bold"), local("D2Coding Light KR Bold"),
+    url("D2CodingLightKR-Bold.woff2") format("woff2"),
+    url("D2CodingLightKR-Bold.woff") format("woff"),
+    url("D2CodingLightKR-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "D2Coding Light KR";
+  font-weight: 400;
+  src: local("D2Coding"), local("D2Coding Light KR Regular"),
+    url("D2CodingLightKR-Regular.woff2") format("woff2"),
+    url("D2CodingLightKR-Regular.woff") format("woff"),
+    url("D2CodingLightKR-Regular.ttf") format("truetype");
+}

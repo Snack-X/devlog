@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article class="blog-article">
+  <header class="article-header">
+    <div class="title"><a href="#">{{ page.title }}</a></div>
+    <div class="date"><time>Written at {{ page.date | date: "%Y-%m-%d" }}</time></div>
+  </header>
+  <section class="article-content">
+    {{ content }}
+  </section>
+</article>

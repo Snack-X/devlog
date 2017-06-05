@@ -1,0 +1,38 @@
+baseurl: ""
+url: "https://devlog.korsnack.kr"
+
+title: Snack Devlog
+blog_title: Snack
+description: Development blog
+copyright:
+  year: 2017
+  name: Snack
+
+timezone: Asia/Seoul
+permalink: /:year/:title
+
+twitter:
+  username: Snack_X
+
+# Build settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+sass:
+  sass_dir: _sass
+  style: :compressed
+
+paginate: 15
+paginate_path: /page/:num/
+
+gems:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  - README.md
