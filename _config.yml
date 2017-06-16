@@ -18,6 +18,7 @@ twitter:
 markdown: kramdown
 kramdown:
   input: GFM
+  hard_wrap: true
 
 sass:
   sass_dir: _sass
