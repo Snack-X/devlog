@@ -248,4 +248,22 @@ h6 { font-size: 1.125rem; }
 .blog-footer {
   text-align: center;
   border-top: 4px double $sc-base2;
+
+  .links {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    & > .item {
+      display: inline-block;
+      margin: 0 .3333rem;
+
+      & > a {
+        color: $text-base-color;
+        font-weight: bold;
+
+        &:hover { color: $text-highlight-color; }
+      }
+    }
+  }
 }
