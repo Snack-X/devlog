@@ -33,6 +33,7 @@ gems:
   - jekyll-seo-tag
 
 exclude:
+  - CNAME
   - Gemfile
   - Gemfile.lock
   - vendor
